@@ -104,9 +104,9 @@ function App() {
   return (
     <div className="app-shell text-zinc-100">
       <header className="topbar">
-        <a aria-label="DefaultAlive home" className="brand" href="/">
+        <a aria-label="MonteSaaS home" className="brand" href="/">
           <span className="brand-mark"><Activity aria-hidden="true" size={17} strokeWidth={2.2} /></span>
-          <span>default<span className="brand-accent">alive</span></span>
+          <span>Monte<span className="brand-accent">SaaS</span></span>
         </a>
         <div className="topbar-right">
           <span className="product-label">RUNWAY INTELLIGENCE</span>
@@ -126,23 +126,23 @@ function App() {
           </div>
           <div className="model-badge">
             <span aria-hidden="true" className="model-live-dot" />
-            <div><strong>Monte Carlo engine</strong><span>36-month horizon</span></div>
+            <div><strong>Monte Carlo Engine</strong><span>36-month horizon</span></div>
             <ArrowUpRight aria-hidden="true" size={16} />
           </div>
         </section>
 
-        <section aria-label="Forecast summary" className="kpi-grid">
+        <section aria-label="Forecast Summary" className="kpi-grid">
           <KpiCard
             detail="Median time until cash reaches zero"
             icon="clock"
-            label="Months of runway"
+            label="Months of Runway"
             tone="mint"
             value={runwayValue}
           />
           <KpiCard
             detail="Probability of staying solvent through month 36"
             icon="pulse"
-            label="Default alive probability"
+            label="Default Alive Probability"
             progress={result ? alivePercent : 0}
             tone="blue"
             value={result ? `${alivePercent}%` : 'Calculating'}
@@ -271,7 +271,7 @@ function App() {
       </main>
 
       <footer className="page-footer">
-        <span>DEFAULTALIVE <span className="footer-year">/ 2026</span></span>
+        <span>MONTESAAS <span className="footer-year">/ 2026</span></span>
         <span>Forecasts are estimates, not financial advice.</span>
       </footer>
 

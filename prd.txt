@@ -1,0 +1,43 @@
+## Product Requirements Document
+
+**Product Name:** DefaultAlive (Monte Carlo Runway Simulator)
+**Type:** Client-side SPA
+**Goal:** Deliver an enterprise-grade probabilistic financial forecasting tool with a butter-smooth, zero-latency user experience.
+
+#### 1. Architecture & Performance Benchmarks
+
+* **Math Execution:** The Monte Carlo loop (1,000 iterations x 36 months) must run inside a **Web Worker**. The main UI thread must remain strictly at 60fps when the user scrubs input sliders.
+* **State Management:** Use Zustand for global state to prevent unnecessary component re-renders.
+* **Debouncing:** Slider UI updates instantly, but the Web Worker payload is debounced by 50ms to prevent execution queuing.
+
+#### 2. UI/UX & Interaction Design (The "Snappy" Feel)
+
+* **Frameworks:** React 18, Tailwind CSS, Radix UI (for unstyled, accessible primitives), Framer Motion (for layout transitions).
+* **Color Palette (Dark Mode Native):**
+* Background: `bg-zinc-950`
+* Cards/Panels: `bg-zinc-900` with a 1px `border-zinc-800`.
+* Typography: `text-zinc-100` (primary), `text-zinc-400` (secondary).
+* Chart Lines: P90 (Teal/Emerald), P50 (Violet/Blue), P10 (Rose/Red).
+
+
+* **Micro-interactions:**
+* Hovering over the chart renders a custom tooltip showing exact values for P10, P50, and P90 at that specific month.
+* Toggling between "Cash View" and "MRR View" must use Framer Motion `<AnimatePresence>` for a smooth crossfade and axis rescale.
+* Number inputs format as currency (`$1,000`) instantly on blur.
+
+
+
+#### 3. Core Math Specifications
+
+The Web Worker must calculate the following for each simulation step:
+
+1. **Box-Muller Transform:** Generate true Gaussian noise for growth and churn.
+2. **Volatility Scaling:** The standard deviation ($\sigma$) is directly tied to the user's Volatility slider (Range 1 to 5).
+3. **Boundary Conditions:** Cash strictly clamps at $0$ (insolvency). ARPU division handles $0$ inputs cleanly to prevent `NaN` crashes.
+4. **Percentile Sorting:** After 1,000 runs, sort the results for each month $t$ to extract exact 10th, 50th, and 90th percentile values.
+
+#### 4. Edge Cases & Accessibility
+
+* Keyboard navigation supported for all sliders and inputs.
+* Mobile responsive: The control panel stacks below the chart on screens `< 768px`.
+* URL sharing encodes all 7 variables into a compressed base64 string or compact query parameters, automatically updating the Zustand store on first load.

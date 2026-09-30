@@ -64,7 +64,7 @@ export function SimulationChart({ points, view, isCalculating, onViewChange }: S
       <div className="panel-heading chart-heading">
         <div>
           <div className="eyebrow">36-month forecast</div>
-          <h2 id="chart-title">{view === 'cash' ? 'Cash balance' : 'Monthly recurring revenue'}</h2>
+          <h2 id="chart-title">{view === 'cash' ? 'Cash Balance' : 'Monthly Recurring Revenue'}</h2>
         </div>
         <div className="chart-heading-actions">
           <div aria-label="Chart metric" className="view-toggle" role="group">

@@ -121,7 +121,7 @@ function App() {
         <section aria-labelledby="page-title" className="intro-row">
           <div>
             <div className="eyebrow intro-eyebrow"><span className="eyebrow-rule" />FOUNDER FINANCE / SIMULATOR 01</div>
-            <h1 id="page-title">Know your runway.<br /><span>Before the market does.</span></h1>
+            <h1 id="page-title">Know Your Runway.<br /><span>Before The Market Does.</span></h1>
             <p className="intro-copy">A probabilistic view of what comes next. Tune your assumptions and explore 1,000 possible futures.</p>
           </div>
           <div className="model-badge">
@@ -169,7 +169,7 @@ function App() {
             <div className="controls-header">
               <div>
                 <div className="eyebrow">SCENARIO INPUTS</div>
-                <h2 id="assumptions-title">Your assumptions</h2>
+                <h2 id="assumptions-title">Your Assumptions</h2>
               </div>
               <button
                 aria-label="Reset scenario to defaults"
@@ -182,12 +182,12 @@ function App() {
               </button>
             </div>
 
-            <div className="control-section-label"><span>Capital & revenue</span><span>USD</span></div>
+            <div className="control-section-label"><span>Capital & Revenue</span><span>USD</span></div>
             <div className="control-stack">
               <CurrencyInput
                 description="Cash available to fund operations"
                 id="cash"
-                label="Cash in bank"
+                label="Cash In Bank"
                 max={100_000_000}
                 onChange={(value) => setInput('cash', value)}
                 step={1_000}
@@ -205,7 +205,7 @@ function App() {
               <CurrencyInput
                 description="Monthly operating costs, excluding revenue"
                 id="burn"
-                label="Monthly burn"
+                label="Monthly Burn"
                 max={10_000_000}
                 onChange={(value) => setInput('burn', value)}
                 step={100}
@@ -214,7 +214,7 @@ function App() {
               <CurrencyInput
                 description="Average monthly revenue per customer"
                 id="arpu"
-                label="Average revenue per account"
+                label="Average Revenue Per Account"
                 max={100_000}
                 onChange={(value) => setInput('arpu', value)}
                 step={1}
@@ -222,13 +222,13 @@ function App() {
               />
             </div>
 
-            <div className="control-section-label behavior-label"><span>Growth assumptions</span><span>MONTHLY</span></div>
+            <div className="control-section-label behavior-label"><span>Growth Assumptions</span><span>MONTHLY</span></div>
             <div className="control-stack slider-stack">
               <RangeControl
                 description="Expected customer growth before uncertainty"
                 displayValue={`${inputs.growth.toFixed(1)}%`}
                 id="growth"
-                label="Customer growth"
+                label="Customer Growth"
                 max={100}
                 min={0}
                 onChange={(value) => setInput('growth', value)}
@@ -239,7 +239,7 @@ function App() {
                 description="Expected monthly customer churn"
                 displayValue={`${inputs.churn.toFixed(1)}%`}
                 id="churn"
-                label="Customer churn"
+                label="Customer Churn"
                 max={100}
                 min={0}
                 onChange={(value) => setInput('churn', value)}
@@ -250,7 +250,7 @@ function App() {
                 description="Scales the spread of growth and churn outcomes"
                 displayValue={`${inputs.volatility.toFixed(1)}x`}
                 id="volatility"
-                label="Market volatility"
+                label="Market Volatility"
                 max={5}
                 min={1}
                 onChange={(value) => setInput('volatility', value)}

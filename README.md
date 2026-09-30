@@ -1,6 +1,6 @@
-# DefaultAlive
+# MonteSaaS
 
-DefaultAlive helps SaaS teams understand how long their cash may last. It runs 1,000 possible 36-month forecasts in a web worker, so changing an assumption does not block the page.
+MonteSaaS includes DefaultAlive, a runway simulator for SaaS teams. It runs 1,000 possible 36-month forecasts in a web worker, so changing an assumption does not block the page.
 
 ## Get started
 

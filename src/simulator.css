@@ -108,7 +108,7 @@ a:focus-visible,
 
 .product-label {
   color: #a1a1aa;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .share-button {
@@ -147,7 +147,7 @@ a:focus-visible,
   align-items: center;
   gap: 9px;
   color: #a1a1aa;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.45;
 }
 
@@ -211,7 +211,7 @@ a:focus-visible,
 
 .model-badge span:not(.model-live-dot) {
   color: #a1a1aa;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .model-live-dot,
@@ -308,7 +308,7 @@ a:focus-visible,
 .kpi-detail {
   margin: 6px 0 0;
   color: #a1a1aa;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -416,7 +416,7 @@ a:focus-visible,
   gap: 8px;
   color: #a1a1aa;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
+  font-size: 13px;
   white-space: nowrap;
 }
 
@@ -512,7 +512,7 @@ a:focus-visible,
   border-bottom: 1px solid #27272a;
   color: #c4c4cc;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .tooltip-row {
@@ -522,13 +522,13 @@ a:focus-visible,
   gap: 16px;
   padding: 4px 0;
   color: #c4c4cc;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .tooltip-row strong {
   color: #f4f4f5;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   font-variant-numeric: tabular-nums;
 }
@@ -541,7 +541,7 @@ a:focus-visible,
   border-top: 1px solid #27272a;
   color: #a1a1aa;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .method-note {
@@ -562,7 +562,7 @@ a:focus-visible,
 .method-note p {
   margin: 0;
   color: #b4b4bc;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.6;
 }
 
@@ -622,7 +622,7 @@ a:focus-visible,
 .control-section-label span:last-child {
   color: #a1a1aa;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 400;
 }
 
@@ -653,7 +653,7 @@ a:focus-visible,
 .field-value {
   color: #f4f4f5;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 12px;
+  font-size: 13px;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
@@ -661,7 +661,7 @@ a:focus-visible,
 .field-description {
   margin: 4px 0 8px;
   color: #a1a1aa;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.5;
 }
 
@@ -764,7 +764,7 @@ a:focus-visible,
   margin-top: 4px;
   color: #a1a1aa;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .controls-footer {
@@ -775,7 +775,7 @@ a:focus-visible,
   border-top: 1px solid #27272a;
   color: #a1a1aa;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .footer-separator {
@@ -795,7 +795,7 @@ a:focus-visible,
   gap: 16px;
   padding: 29px 0 21px;
   color: #a1a1aa;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .footer-year {
@@ -949,7 +949,7 @@ a:focus-visible,
   }
 
   .kpi-detail {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .workspace-grid {
@@ -976,17 +976,17 @@ a:focus-visible,
   .view-toggle button {
     min-width: 48px;
     padding: 0 8px;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .chart-status {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .chart-legend {
     gap: 13px;
     margin-top: 16px;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .chart-canvas {
@@ -996,7 +996,7 @@ a:focus-visible,
 
   .chart-footnote {
     align-items: flex-start;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .method-note {
